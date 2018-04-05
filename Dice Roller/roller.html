@@ -14,32 +14,27 @@
 
 </head>
 <body>
-    <div class="ui container">
+
+    <div class="ui menu"></div>
+    <div class="ui raised padded text container segment">
         <!--A set of buttons that represent different dice-->
-        <div class="ui container">
-            <div class="ui buttons">
-                <button class="ui red button" id="dice4">D4</button>
-                <button class="ui red button" id="dice6">D6</button>
-                <button class="ui red button" id="dice8">D8</button>
+            <h1 class="ui center aligned header">Dice Roller</h1>
+            <div class="ui six column center aligned doubling grid container">
+                <div class="column"><button class="ui fluid red button" id="dice4">D4</button></div>
+                <div class="column"><button class="ui fluid red button" id="dice6">D6</button></div>
+                <div class="column"><button class="ui fluid red button" id="dice8">D8</button></div>
+                <div class="column"><button class="ui fluid red button" id="dice10">D10</button></div>
+                <div class="column"><button class="ui fluid red button" id="dice12">D12</button></div>
+                <div class="column"><button class="ui fluid red button" id="dice20">D20</button></div>
             </div>
-        </div>
 
-        <div class="ui container">
-            <div class="ui buttons">
-                <button class="ui red button" id="dice10">D10</button>
-                <button class="ui red button" id="dice12">D12</button>
-                <button class="ui red button" id="dice20">D20</button>
-            </div>
-        </div>
-
-        <!--A text field that the results of the dice rolls go-->
+            <!--A text field that the results of the dice rolls go-->
             <div class="ui form">
                 <div class="field">
-                    <textarea id="history"></textarea>
+                    <textarea rows="14" id="history"></textarea>
                 </div>
             </div>
-        </div>
-        <!--An advanced dice roller for special rolls-->
     </div>
+        <!--An advanced dice roller for special rolls-->
 </body>
 </html>

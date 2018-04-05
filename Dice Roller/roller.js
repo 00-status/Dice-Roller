@@ -5,7 +5,11 @@
         // generate a random number between 1 and the chosen size
         var result = Math.floor(Math.random() * size) + 1;
 
-        alert(result);
+        // Append the result to the text area
+        var text = $("#history").val()
+        text = "1d" + size + " = " + result + "\n" + text
+
+        $("#history").val(text)
     };
 
 
