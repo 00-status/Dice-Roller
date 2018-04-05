@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <!--Import semantic ui default stylesheet-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"/>
+    <!--Import Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--import semantic ui javascript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+    <!--Import the dice roller code-->
+    <script src="roller.js"></script>
+    <title>Dice Roller | Liam Johnson</title>
+
+</head>
+<body>
+    <div class="ui container">
+        <!--A set of buttons that represent different dice-->
+        <div class="ui container">
+            <div class="ui buttons">
+                <button class="ui red button" id="dice4">D4</button>
+                <button class="ui red button" id="dice6">D6</button>
+                <button class="ui red button" id="dice8">D8</button>
+            </div>
+        </div>
+
+        <div class="ui container">
+            <div class="ui buttons">
+                <button class="ui red button" id="dice10">D10</button>
+                <button class="ui red button" id="dice12">D12</button>
+                <button class="ui red button" id="dice20">D20</button>
+            </div>
+        </div>
+
+        <!--A text field that the results of the dice rolls go-->
+            <div class="ui form">
+                <div class="field">
+                    <textarea id="history"></textarea>
+                </div>
+            </div>
+        </div>
+        <!--An advanced dice roller for special rolls-->
+    </div>
+</body>
+</html>
