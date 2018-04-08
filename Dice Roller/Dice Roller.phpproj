@@ -16,6 +16,7 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="index.php" />
+    <Content Include="roller.html" />
+    <Content Include="roller.js" />
   </ItemGroup>
 </Project>
