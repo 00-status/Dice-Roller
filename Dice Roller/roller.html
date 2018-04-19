@@ -10,42 +10,44 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
     <!--Import the dice roller code-->
     <script src="roller.js"></script>
+    <!-- Import the style of the page -->
+    <link href="looks.css" rel="stylesheet" />
     <title>Dice Roller | Liam Johnson</title>
 
 </head>
 <body>
 
     <div class="ui menu"></div>
-    <div class="ui raised padded text container segment">
+    <div id="contents" class="ui raised padded text container segment">
         <!--A set of buttons that represent different dice-->
             <h1 class="ui center aligned header">Dice Roller</h1>
             <div class="ui six column center aligned doubling grid container">
-                <div class="column"><button class="ui fluid red button" id="dice4">D4</button></div>
-                <div class="column"><button class="ui fluid red button" id="dice6">D6</button></div>
-                <div class="column"><button class="ui fluid red button" id="dice8">D8</button></div>
-                <div class="column"><button class="ui fluid red button" id="dice10">D10</button></div>
-                <div class="column"><button class="ui fluid red button" id="dice12">D12</button></div>
-                <div class="column"><button class="ui fluid red button" id="dice20">D20</button></div>
+                <div class="column"><button class="ui fluid red button diceButtons" id="dice4">D4</button></div>
+                <div class="column"><button class="ui fluid red button diceButtons" id="dice6">D6</button></div>
+                <div class="column"><button class="ui fluid red button diceButtons" id="dice8">D8</button></div>
+                <div class="column"><button class="ui fluid red button diceButtons" id="dice10">D10</button></div>
+                <div class="column"><button class="ui fluid red button diceButtons" id="dice12">D12</button></div>
+                <div class="column"><button class="ui fluid red button diceButtons" id="dice20">D20</button></div>
             </div>
 
             <!--A text field that the results of the dice rolls go-->
             <div class="ui form">
                 <div class="field">
-                    <textarea rows="14" id="history"></textarea>
+                    <textarea class="textEntry" rows="14" id="history"></textarea>
                 </div>
 
                 <!--An advanced dice roller for special rolls-->
                 <div class="ui centered grid">
                     <div class="two wide computer three wide tablet four wide mobile column">
-                        <input id="diceRollNumber" type="text" placeholder="1"/>
+                        <input class="textEntry" id="diceRollNumber" type="text" placeholder="1"/>
                     </div>
                     <div class="one wide computer one wide tablet two wide mobile column"><h5>D</h5></div>
                     <div class="two wide computer three wide tablet four wide mobile column">
-                        <input id="diceType"type="text" placeholder="Dice"/>
+                        <input class="textEntry" id="diceType"type="text" placeholder="Dice"/>
                     </div>
                     <div class="one wide computer one wide tablet two wide mobile column"><i class="plus icon"></i></div>
                     <div class="two wide computer three wide tablet four wide mobile column">
-                        <input id="innerAdd" type="text" placeholder="0"/>
+                        <input class="textEntry" id="innerAdd" type="text" placeholder="0"/>
                     </div>
                     <div class="two wide computer three wide tablet four wide mobile column">
                         <button id="rollButton" class="ui red button">Roll</button>

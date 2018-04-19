@@ -16,6 +16,7 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="looks.css" />
     <Content Include="roller.html" />
     <Content Include="roller.js" />
   </ItemGroup>

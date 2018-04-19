@@ -1,0 +1,21 @@
+﻿body {
+    background-color: rgb(61, 59, 60);
+}
+
+.ui.menu {
+    background-color: rgb(104, 59, 74);
+}
+
+#contents {
+    background-color: rgb(104, 59, 74);
+}
+
+.ui.red.button, .ui.red.buttons .button {
+    background-color: rgb(188, 11, 62);
+}
+
+.textEntry {
+    /*icon dislike using important tags, but doing thing properly would result in some really sloppy syntax,
+    so ce la vie.*/
+    background-color: rgb(224, 217, 219) !important;
+}
