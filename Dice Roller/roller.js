@@ -6,8 +6,6 @@
         // Retrieve the current text from the TextArea
         var text = $("#history").val();
 
-        text = "\n" + text;
-
         // If the user is only rolling once, then display something simpler
         if (diceRollNumber == 1 && innerAdd === 0)
         {
@@ -23,6 +21,8 @@
         {
             // The running total
             var amount = 0;
+
+            text = "\n" + text;
 
             // roll the amount of dice indicated by diceRollNumber
             for (var i = 0; i < diceRollNumber; i++) {
@@ -56,6 +56,10 @@
         if (!diceRollNumber)
         {
             diceRollNumber = 1;
+        }
+        if (!diceType)
+        {
+            diceType = 20;
         }
         if (!innerAdd)
         {

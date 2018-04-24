@@ -33,21 +33,21 @@
             <!--A text field that the results of the dice rolls go-->
             <div class="ui form">
                 <div class="field">
-                    <textarea class="textEntry" rows="14" id="history"></textarea>
+                    <textarea class="textEntry" rows="14" id="history" readonly></textarea>
                 </div>
 
                 <!--An advanced dice roller for special rolls-->
                 <div class="ui centered grid">
                     <div class="two wide computer three wide tablet four wide mobile column">
-                        <input class="textEntry" id="diceRollNumber" type="text" placeholder="1"/>
+                        <input class="textEntry" id="diceRollNumber" type="number" placeholder="1"/>
                     </div>
                     <div class="one wide computer one wide tablet two wide mobile column"><h5>D</h5></div>
                     <div class="two wide computer three wide tablet four wide mobile column">
-                        <input class="textEntry" id="diceType"type="text" placeholder="Dice"/>
+                        <input class="textEntry" id="diceType" type="number" placeholder="Dice"/>
                     </div>
                     <div class="one wide computer one wide tablet two wide mobile column"><i class="plus icon"></i></div>
                     <div class="two wide computer three wide tablet four wide mobile column">
-                        <input class="textEntry" id="innerAdd" type="text" placeholder="0"/>
+                        <input class="textEntry" id="innerAdd" type="number" placeholder="0"/>
                     </div>
                     <div class="two wide computer three wide tablet four wide mobile column">
                         <button id="rollButton" class="ui red button">Roll</button>
