@@ -52,16 +52,17 @@
         var diceType = $("#diceType").val();
         var innerAdd = parseInt ( $("#innerAdd").val() );
 
+
         // Do some basic validation
-        if (!diceRollNumber)
+        if (!diceRollNumber || !/^\d+$/.test(diceRollNumber))
         {
             diceRollNumber = 1;
         }
-        if (!diceType)
+        if (!diceType || !/^\d+$/.test(diceType))
         {
             diceType = 20;
         }
-        if (!innerAdd)
+        if (!innerAdd || !/^\d+$/.test(innerAdd))
         {
             innerAdd = 0;
         }
