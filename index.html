@@ -12,6 +12,7 @@
 
     <!-- Import the style of the page -->
     <link href="/public/css/roller.css" rel="stylesheet" />
+    <link href="/public/css/default.css" rel="stylesheet" />
     <!--Import the dice roller code-->
     <script src="/public/js/roller.js"></script>
     <script src='../node_modules/vue/dist/vue.js'></script>
@@ -21,9 +22,9 @@
 <body>
     <h1 class="ui center aligned header">Dice Roller</h1>
 
-    <!--A set of buttons that represent different dice-->
-    <div id="contents" class="ui raised padded text container segment content">
+    <div id="contents" class="diceRoller">
         <dice-buttons></dice-buttons>
+        <advanced-dice></advanced-dice>
         <dice-text></dice-text>
     </div>
 

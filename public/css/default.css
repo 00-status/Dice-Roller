@@ -1,0 +1,37 @@
+
+.diceRoller {
+    width: 50%;
+    margin: auto;
+}
+
+.diceContainer {
+    width: 50%;
+    margin: auto;
+}
+
+.diceRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.diceColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.diceButton {
+    width: 100px;
+    height: 75px;
+    margin: 3px;
+
+    background-color: rgb(221, 20, 20);
+    border: 1px solid black;
+    border-radius: 2%;
+    box-shadow: 0px 0px 8px rgb(59, 59, 59);
+}
+
+.diceButton:hover {
+    background-color: rgb(177, 16, 16);
+    border: none;
+}
