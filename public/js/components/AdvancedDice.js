@@ -1,18 +1,12 @@
 
 const template = `
-<div class="">
-    <div class="">
-        <input id="diceRollNumber" class="textEntry" maxlength="1000" type="text" placeholder="1"/>
-    </div>
-    <div class="">
-        <input id="diceType" class="textEntry" maxlength="1000" type="text" placeholder="Dice"/>
-    </div>
-    <div class="">
-        <input id="innerAdd" class="textEntry" maxlength="1000" type="text" placeholder="0"/>
-    </div>
-    <div class="">
-        <button id="rollButton" class="ui red button">Roll</button>
-    </div>
+<div class="diceRow advancedRoller">
+    <input id="diceRollNumber" class="advancedRollerEntry" maxlength="1000" type="text" placeholder="1"/>
+    <p class="advancedRollerSeparator">D</p>
+    <input id="diceType" class="advancedRollerEntry" maxlength="1000" type="text" placeholder="Dice"/>
+    <p class="advancedRollerSeparator">+</p>
+    <input id="innerAdd" class="advancedRollerEntry" maxlength="1000" type="text" placeholder="0"/>
+    <button id="rollButton" class="advancedDiceButton">Roll</button>
 </div>
 `;
 
