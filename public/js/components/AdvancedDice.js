@@ -1,15 +1,47 @@
 
 const template = `
 <div class="diceRow advancedRoller">
-    <input id="diceRollNumber" class="advancedRollerEntry" maxlength="1000" type="text" placeholder="1"/>
+    <input
+        class="advancedRollerEntry"
+        maxlength="1000"
+        type="number"
+        placeholder="1"
+        v-model="numberOfDice"
+    />
     <p class="advancedRollerSeparator">D</p>
-    <input id="diceType" class="advancedRollerEntry" maxlength="1000" type="text" placeholder="Dice"/>
+    <input
+        class="advancedRollerEntry"
+        maxlength="1000"
+        type="text"
+        placeholder="Dice"
+        v-model="diceType"
+    />
     <p class="advancedRollerSeparator">+</p>
-    <input id="innerAdd" class="advancedRollerEntry" maxlength="1000" type="text" placeholder="0"/>
-    <button id="rollButton" class="advancedDiceButton">Roll</button>
+    <input
+        class="advancedRollerEntry"
+        maxlength="1000"
+        type="text"
+        placeholder="0"
+        v-model="add"
+    />
+    <button v-on:click="advancedDiceRoll" class="advancedDiceButton">Roll</button>
 </div>
 `;
 
-const AdvancedDice = { template };
+const AdvancedDice = {
+    template,
+    data: function () {
+        return {
+            diceType: null,
+            numberOfDice: null,
+            add: null
+        };
+    },
+    methods: {
+        advancedDiceRoll: function () {
+            this.$emit('advanced-dice-roll', this.diceType, this.numberOfDice, this.add);
+        }
+    }
+};
 
 export default AdvancedDice;

@@ -19,12 +19,11 @@
     <title>Dice Roller | Liam Johnson</title>
 </head>
 <body>
-    <h1 class="ui center aligned header">Dice Roller</h1>
-
+    <h1>Dice Roller</h1>
     <div id="contents" class="diceRoller">
-        <dice-text></dice-text>
-        <dice-buttons></dice-buttons>
-        <advanced-dice></advanced-dice>
+        <dice-text v-bind:dice-history="diceHistory"></dice-text>
+        <dice-buttons v-on:roll-dice="handleDiceRoll"></dice-buttons>
+        <advanced-dice v-on:advanced-dice-roll="handleDiceRoll"></advanced-dice>
     </div>
 
     <script src="./public/js/RollerApp.js" type="module"></script>
