@@ -3,7 +3,7 @@ const template = `
 <div class="diceRow advancedRoller">
     <input
         class="advancedRollerEntry"
-        maxlength="1000"
+        maxlength="4"
         type="number"
         placeholder="1"
         v-model="numberOfDice"
@@ -11,16 +11,16 @@ const template = `
     <p class="advancedRollerSeparator">D</p>
     <input
         class="advancedRollerEntry"
-        maxlength="1000"
-        type="text"
+        maxlength="4"
+        type="number"
         placeholder="Dice"
         v-model="diceType"
     />
     <p class="advancedRollerSeparator">+</p>
     <input
         class="advancedRollerEntry"
-        maxlength="1000"
-        type="text"
+        maxlength="4"
+        type="number"
         placeholder="0"
         v-model="add"
     />

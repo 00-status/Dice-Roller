@@ -19,7 +19,7 @@ const rollDice = (diceType, diceRollNumber = 1, add = 0) => {
             rollText = "1 d" + diceType + " = " + result + "\n" + rollText;
         }
 
-        totalRoll += add;
+        totalRoll += parseInt(add);
         rollText = "Total: \t" + totalRoll + "\n" + rollText;
         return "Roll: \t" + diceRollNumber + " d" + diceType + " + " + add
             + "\n" + rollText;
